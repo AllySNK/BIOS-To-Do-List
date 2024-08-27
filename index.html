@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List 📝</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="todo-header">
+        <header>
+          <h1>To-Do List <img src="images/edit-11-100.png" /></h1>
+        </header>
+      </div>
+      <main>
+        <div class="todo-main">
+          <div class="field">
+            <input type="text" id="inputField" placeholder="Agrega una tarea" />
+            <button onclick="agregarTarea()">Agregar</button>
+          </div>
+          <ul id="contenido-lista"></ul>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

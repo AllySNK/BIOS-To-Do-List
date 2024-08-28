@@ -35,7 +35,6 @@
 }
 .field {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   background: #f3f1f1;
   border-radius: 10px;
@@ -62,9 +61,8 @@ ul li {
   list-style: none;
   font-size: 20px;
   padding: 15px 10px;
-  user-select: none;
   cursor: pointer;
-  background: #f3f1f1;
+  background: #fffee7;
   margin-bottom: 10px;
   border-radius: 10px;
   position: relative;
@@ -79,24 +77,12 @@ ul li span {
   font-size: 15px;
   border-radius: 50px;
   position: absolute;
-  right: 0;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 ul li.completada {
   text-decoration: line-through;
   color: #777;
-}
-
-ul li .eliminar {
-  border: none;
-  outline: none;
-  padding: 10px 15px;
-  background: #ffbfcb;
-  color: black;
-  font-size: 15px;
-  border-radius: 50px;
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
 }

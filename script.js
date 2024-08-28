@@ -5,25 +5,26 @@ function agregarTarea() {
     return;
   }
 
-  let li = document.createElement("li");
-  li.className = "tarea";
-  li.textContent = textoDelInput;
+  let newTask = document.createElement("li");
+  newTask.textContent = textoDelInput;
 
-  li.onclick = function () {
-    li.classList.toggle("completada");
+  newTask.onclick = function () {
+    newTask.classList.toggle("completada");
   };
 
   let eliminarTarea = document.createElement("span");
   eliminarTarea.textContent = "x";
-  eliminarTarea.className = "eliminar";
   eliminarTarea.onclick = function (event) {
-    event.stopPropagation(); // Evita que el click en el "x" marque como completada la tarea
-    li.remove();
+    event.stopPropagation();
+    newTask.remove();
   };
 
-  li.appendChild(eliminarTarea);
+  newTask.appendChild(eliminarTarea);
 
-  document.getElementById("contenido-lista").appendChild(li);
+  document.getElementById("contenido-lista").appendChild(newTask);
 
   document.getElementById("inputField").value = "";
 }
+//Hola! Nota de editor 😆 Si por alguna razón el código no funciona como debería, por favor avísenme, estuve dándole unos últimos retoques
+//y probé todo, en teoría anda bien, pero por ahí metí un dedazo en algún lado y puede que se haya roto algo, esperemos que no, pero ta!
+//Gracias por su atención 😁👍🏻
